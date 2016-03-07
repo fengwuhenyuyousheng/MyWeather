@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:background="#9ACD32" >
+
+        <Button
+            android:id="@+id/back_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:background="#551A8B"
+            android:text="增加城市" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="天气主页"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:background="#551A8B"
+            android:text="手动更新" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="10" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#9ACD32" >
+        
+        <Button
+            android:id="@+id/auto_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="12sp" />
+        
+        <Button
+            android:id="@+id/delete_current"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="删除当前城市" />
+
+        <Button
+            android:id="@+id/delete_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="删除所有城市"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
